@@ -1,0 +1,17 @@
+debug: false
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.bootdemo.model
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+spring:
+  profiles:
+    active: dev
+
